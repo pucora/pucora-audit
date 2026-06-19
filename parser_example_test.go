@@ -41,18 +41,18 @@ func ExampleParse() {
 	//             64
 	//           ],
 	//           "c": {
-	//             "github.com/pucora/velonetics-httpcache": [
+	//             "github.com/pucora/pucora-httpcache": [
 	//               0
 	//             ],
-	//             "github.com/pucora/velonetics-lua/proxy/backend": [
+	//             "github.com/pucora/pucora-lua/proxy/backend": [
 	//               2
 	//             ]
 	//           }
 	//         }
 	//       ],
 	//       "c": {
-	//         "github.com/pucora/velonetics-jose/validator": [],
-	//         "github.com/pucora/velonetics-lua/proxy": [
+	//         "github.com/pucora/pucora-jose/validator": [],
+	//         "github.com/pucora/pucora-lua/proxy": [
 	//           3
 	//         ],
 	//         "modifier/response-body": [
@@ -172,7 +172,7 @@ func ExampleParse() {
 	//             64
 	//           ],
 	//           "c": {
-	//             "github.com/pucora/velonetics-httpcache": [
+	//             "github.com/pucora/pucora-httpcache": [
 	//               7
 	//             ]
 	//           }
@@ -410,7 +410,7 @@ func ExampleParse() {
 	//       3
 	//     ],
 	//     "auth/api-keys": [],
-	//     "github.com/pucora/velonetics-lua/router": [
+	//     "github.com/pucora/pucora-lua/router": [
 	//       1
 	//     ],
 	//     "github_com/devopsfaith/bloomfilter": [
@@ -421,7 +421,7 @@ func ExampleParse() {
 	//     "github_com/luraproject/lura/router/gin": [
 	//       262144
 	//     ],
-	//     "github_com/pucora/velonetics-influx": [],
+	//     "github_com/pucora/pucora-influx": [],
 	//     "github_com/pucora/pucora/transport/http/server/handler": [
 	//       4
 	//     ],

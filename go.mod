@@ -1,26 +1,26 @@
-module github.com/pucora/velonetics-audit
+module github.com/pucora/pucora-audit
 
 go 1.25.0
 
 require (
 	github.com/go-viper/mapstructure/v2 v2.5.0
 	github.com/pucora/bloomfilter/v2 v2.0.0
-	github.com/pucora/velonetics-botdetector/v2 v2.0.0
-	github.com/pucora/velonetics-circuitbreaker/v3 v3.0.0
-	github.com/pucora/velonetics-cors/v2 v2.0.0
-	github.com/pucora/velonetics-gelf/v2 v2.0.0
-	github.com/pucora/velonetics-gologging/v2 v2.0.0
-	github.com/pucora/velonetics-httpcache/v2 v2.0.0
-	github.com/pucora/velonetics-httpsecure/v2 v2.0.0
-	github.com/pucora/velonetics-influx/v2 v2.0.0
-	github.com/pucora/velonetics-jose/v2 v2.0.0
-	github.com/pucora/velonetics-logstash/v2 v2.0.0
-	github.com/pucora/velonetics-lua/v2 v2.0.0
-	github.com/pucora/velonetics-metrics/v2 v2.0.0
-	github.com/pucora/velonetics-opencensus/v2 v2.0.0
-	github.com/pucora/velonetics-ratelimit/v3 v3.0.0
-	github.com/pucora/velonetics-rss/v2 v2.0.0
-	github.com/pucora/velonetics-xml/v2 v2.0.0
+	github.com/pucora/pucora-botdetector/v2 v2.0.0
+	github.com/pucora/pucora-circuitbreaker/v3 v3.0.0
+	github.com/pucora/pucora-cors/v2 v2.0.0
+	github.com/pucora/pucora-gelf/v2 v2.0.0
+	github.com/pucora/pucora-gologging/v2 v2.0.0
+	github.com/pucora/pucora-httpcache/v2 v2.0.0
+	github.com/pucora/pucora-httpsecure/v2 v2.0.0
+	github.com/pucora/pucora-influx/v2 v2.0.0
+	github.com/pucora/pucora-jose/v2 v2.0.0
+	github.com/pucora/pucora-logstash/v2 v2.0.0
+	github.com/pucora/pucora-lua/v2 v2.0.0
+	github.com/pucora/pucora-metrics/v2 v2.0.0
+	github.com/pucora/pucora-opencensus/v2 v2.0.0
+	github.com/pucora/pucora-ratelimit/v3 v3.0.0
+	github.com/pucora/pucora-rss/v2 v2.0.0
+	github.com/pucora/pucora-xml/v2 v2.0.0
 	github.com/pucora/lura/v2 v2.0.0
 )
 

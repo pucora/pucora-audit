@@ -5,7 +5,7 @@
   "echo_endpoint": true,
   "use_h2c": true,
   "extra_config": {
-    "github_com/pucora/velonetics-influx":{
+    "github_com/pucora/pucora-influx":{
       "address":"http://influxdb:8086",
       "ttl":"25s",
       "buffer_size":0,
@@ -44,7 +44,7 @@
         "X-Pucora-Completed": "X-Completed"
       }
     },
-    "github.com/pucora/velonetics-lua/router": {
+    "github.com/pucora/pucora-lua/router": {
       "pre": "some_lua_code()"
     },
     "qos/ratelimit/service": {
@@ -196,7 +196,7 @@
       "endpoint": "/protected/resource",
       "timeout": "140s",
       "extra_config": {
-        "github.com/pucora/velonetics-jose/validator": {
+        "github.com/pucora/pucora-jose/validator": {
           "alg": "RS256",
           "audience": [
             "http://api.example.com"
@@ -209,7 +209,7 @@
           "jwk_url": "https://albert-test.auth0.com/.well-known/jwks.json",
           "cache": true
         },
-        "github.com/pucora/velonetics-lua/proxy": {
+        "github.com/pucora/pucora-lua/proxy": {
           "pre": "some_lua_code()",
           "post": "some_more_lua_code()"
         },
@@ -262,10 +262,10 @@
         {
           "url_pattern": "/",
           "extra_config": {
-            "github.com/pucora/velonetics-lua/proxy/backend": {
+            "github.com/pucora/pucora-lua/proxy/backend": {
               "post": "some_lua_code()"
             },
-            "github.com/pucora/velonetics-httpcache": {}
+            "github.com/pucora/pucora-httpcache": {}
           }
         }
       ]
@@ -360,7 +360,7 @@
         {
           "url_pattern": "/",
           "extra_config": {
-            "github.com/pucora/velonetics-httpcache": {
+            "github.com/pucora/pucora-httpcache": {
               "shared": true,
               "max_items": 100,
               "max_size": 10000

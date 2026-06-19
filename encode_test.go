@@ -8,9 +8,9 @@ import (
 	"time"
 
 	bf "github.com/pucora/bloomfilter/v2/pucora"
-	botdetector "github.com/pucora/velonetics-botdetector/v2/pucora"
-	opencensus "github.com/pucora/velonetics-opencensus/v2"
-	ratelimit "github.com/pucora/velonetics-ratelimit/v3/router"
+	botdetector "github.com/pucora/pucora-botdetector/v2/pucora"
+	opencensus "github.com/pucora/pucora-opencensus/v2"
+	ratelimit "github.com/pucora/pucora-ratelimit/v3/router"
 	"github.com/pucora/lura/v2/config"
 	"github.com/pucora/lura/v2/proxy"
 	"github.com/pucora/lura/v2/proxy/plugin"

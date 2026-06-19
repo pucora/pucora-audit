@@ -1,20 +1,20 @@
 package audit
 
 import (
-	botdetector "github.com/pucora/velonetics-botdetector/v2/pucora"
-	cb "github.com/pucora/velonetics-circuitbreaker/v3/gobreaker"
-	cors "github.com/pucora/velonetics-cors/v2"
-	gelf "github.com/pucora/velonetics-gelf/v2"
-	gologging "github.com/pucora/velonetics-gologging/v2"
-	httpcache "github.com/pucora/velonetics-httpcache/v2"
-	httpsecure "github.com/pucora/velonetics-httpsecure/v2"
-	influx "github.com/pucora/velonetics-influx/v2"
-	jose "github.com/pucora/velonetics-jose/v2"
-	logstash "github.com/pucora/velonetics-logstash/v2"
-	metrics "github.com/pucora/velonetics-metrics/v2"
-	opencensus "github.com/pucora/velonetics-opencensus/v2"
-	ratelimitProxy "github.com/pucora/velonetics-ratelimit/v3/proxy"
-	ratelimit "github.com/pucora/velonetics-ratelimit/v3/router"
+	botdetector "github.com/pucora/pucora-botdetector/v2/pucora"
+	cb "github.com/pucora/pucora-circuitbreaker/v3/gobreaker"
+	cors "github.com/pucora/pucora-cors/v2"
+	gelf "github.com/pucora/pucora-gelf/v2"
+	gologging "github.com/pucora/pucora-gologging/v2"
+	httpcache "github.com/pucora/pucora-httpcache/v2"
+	httpsecure "github.com/pucora/pucora-httpsecure/v2"
+	influx "github.com/pucora/pucora-influx/v2"
+	jose "github.com/pucora/pucora-jose/v2"
+	logstash "github.com/pucora/pucora-logstash/v2"
+	metrics "github.com/pucora/pucora-metrics/v2"
+	opencensus "github.com/pucora/pucora-opencensus/v2"
+	ratelimitProxy "github.com/pucora/pucora-ratelimit/v3/proxy"
+	ratelimit "github.com/pucora/pucora-ratelimit/v3/router"
 	"github.com/pucora/lura/v2/proxy"
 	"github.com/pucora/lura/v2/proxy/plugin"
 	router "github.com/pucora/lura/v2/router/gin"
@@ -463,8 +463,8 @@ func hasStreamingWithResponseLua(s *Service) bool {
 			continue
 		}
 		for _, luaNS := range []string{
-			"github.com/pucora/velonetics-lua/proxy",
-			"github.com/pucora/velonetics-lua/router",
+			"github.com/pucora/pucora-lua/proxy",
+			"github.com/pucora/pucora-lua/router",
 		} {
 			if bits, ok := e.Components[luaNS]; ok && len(bits) > 0 && hasBit(bits[0], 1) {
 				return true

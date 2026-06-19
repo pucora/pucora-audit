@@ -3,18 +3,18 @@ package audit
 import (
 	"testing"
 
-	botdetector "github.com/pucora/velonetics-botdetector/v2/pucora"
-	cb "github.com/pucora/velonetics-circuitbreaker/v3/gobreaker"
-	cors "github.com/pucora/velonetics-cors/v2"
-	gelf "github.com/pucora/velonetics-gelf/v2"
-	gologging "github.com/pucora/velonetics-gologging/v2"
-	httpsecure "github.com/pucora/velonetics-httpsecure/v2"
-	jose "github.com/pucora/velonetics-jose/v2"
-	logstash "github.com/pucora/velonetics-logstash/v2"
-	metrics "github.com/pucora/velonetics-metrics/v2"
-	opencensus "github.com/pucora/velonetics-opencensus/v2"
-	ratelimitProxy "github.com/pucora/velonetics-ratelimit/v3/proxy"
-	ratelimit "github.com/pucora/velonetics-ratelimit/v3/router"
+	botdetector "github.com/pucora/pucora-botdetector/v2/pucora"
+	cb "github.com/pucora/pucora-circuitbreaker/v3/gobreaker"
+	cors "github.com/pucora/pucora-cors/v2"
+	gelf "github.com/pucora/pucora-gelf/v2"
+	gologging "github.com/pucora/pucora-gologging/v2"
+	httpsecure "github.com/pucora/pucora-httpsecure/v2"
+	jose "github.com/pucora/pucora-jose/v2"
+	logstash "github.com/pucora/pucora-logstash/v2"
+	metrics "github.com/pucora/pucora-metrics/v2"
+	opencensus "github.com/pucora/pucora-opencensus/v2"
+	ratelimitProxy "github.com/pucora/pucora-ratelimit/v3/proxy"
+	ratelimit "github.com/pucora/pucora-ratelimit/v3/router"
 	router "github.com/pucora/lura/v2/router/gin"
 	server "github.com/pucora/lura/v2/transport/http/server/plugin"
 )
@@ -339,7 +339,7 @@ func Test_hasStreamingWithResponseLua(t *testing.T) {
 		Details: []int{1 << EncodingNOOP},
 		Backends: []Backend{{Details: []int{1 << EncodingNOOP}}},
 		Components: Component{
-			"github.com/pucora/velonetics-lua/router": {2},
+			"github.com/pucora/pucora-lua/router": {2},
 		},
 	}}}) {
 		t.Error("expected true when streaming endpoint has lua post modifier")
