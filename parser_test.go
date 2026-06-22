@@ -52,8 +52,8 @@ func TestParse(t *testing.T) {
 		t.Errorf("unexpected number of agents. have: %d, want: %d", len(result.Agents), len(cfg.AsyncAgents))
 	}
 
-	if len(result.Details) != 1 {
-		t.Errorf("unexpected number of details. have: %d, want: 1", len(result.Details))
+	if len(result.Details) != 2 {
+		t.Errorf("unexpected number of details. have: %d, want: 2", len(result.Details))
 		return
 	}
 

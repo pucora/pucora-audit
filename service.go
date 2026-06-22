@@ -7,6 +7,7 @@ type Service struct {
 	Agents     []Agent    `json:"a"`
 	Endpoints  []Endpoint `json:"e"`
 	Components Component  `json:"c"`
+	AuthProd   AuthProd   `json:"ap,omitempty"`
 }
 
 // Clone returns a deep copy of the service
@@ -16,6 +17,7 @@ func (s Service) Clone() Service {
 		Agents:     make([]Agent, len(s.Agents)),
 		Endpoints:  make([]Endpoint, len(s.Endpoints)),
 		Components: s.Components.Clone(),
+		AuthProd:   s.AuthProd,
 	}
 	copy(res.Details, s.Details)
 	for i, a := range s.Agents {

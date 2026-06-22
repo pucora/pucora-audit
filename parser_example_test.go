@@ -22,7 +22,8 @@ func ExampleParse() {
 	// output:
 	// {
 	//   "d": [
-	//     7220
+	//     7220,
+	//     2000
 	//   ],
 	//   "a": null,
 	//   "e": [
@@ -418,9 +419,7 @@ func ExampleParse() {
 	//       2,
 	//       0
 	//     ],
-	//     "github_com/luraproject/lura/router/gin": [
-	//       262144
-	//     ],
+	//     "github_com/luraproject/lura/router/gin": [],
 	//     "github_com/pucora/pucora-influx": [],
 	//     "github_com/pucora/pucora/transport/http/server/handler": [
 	//       4
@@ -439,7 +438,8 @@ func ExampleParse() {
 	//       2,
 	//       1
 	//     ]
-	//   }
+	//   },
+	//   "ap": {}
 	// }
 }
 
@@ -458,7 +458,8 @@ func ExampleParse_withRevokerServer() {
 	// output:
 	// {
 	//   "d": [
-	//     0
+	//     0,
+	//     2000
 	//   ],
 	//   "a": null,
 	//   "e": [
@@ -488,6 +489,7 @@ func ExampleParse_withRevokerServer() {
 	//       1,
 	//       1
 	//     ]
-	//   }
+	//   },
+	//   "ap": {}
 	// }
 }

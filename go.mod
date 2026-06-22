@@ -119,6 +119,7 @@ require (
 	github.com/pucora/go-auth0/v2 v2.0.1 // indirect
 	github.com/pucora/httpcache v1.0.1 // indirect
 	github.com/pucora/lru v1.0.1 // indirect
+	github.com/pucora/pucora-apikeys/v2 v2.0.0 // indirect
 	github.com/quic-go/qpack v0.6.0 // indirect
 	github.com/quic-go/quic-go v0.59.1 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20250401214520-65e299d6c5c9 // indirect

@@ -113,6 +113,26 @@ func hasNoJWT(s *Service) bool {
 	return true
 }
 
+func hasJWTDisableJWKSecurity(s *Service) bool {
+	return s.AuthProd.JWTDisableJWKSecurity
+}
+
+func hasJWTOperationDebug(s *Service) bool {
+	return s.AuthProd.JWTOperationDebug
+}
+
+func hasRevokerMissingAPIKey(s *Service) bool {
+	return s.AuthProd.RevokerMissingAPIKey
+}
+
+func hasAPIKeysPlainHash(s *Service) bool {
+	return s.AuthProd.APIKeysPlainHash
+}
+
+func hasAPIKeysQueryStrategy(s *Service) bool {
+	return s.AuthProd.APIKeysQueryStrategy
+}
+
 func hasInsecureConnections(s *Service) bool {
 	return hasBit(s.Details[0], ServiceAllowInsecureConnections)
 }

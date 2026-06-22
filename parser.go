@@ -83,6 +83,7 @@ func Parse(cfg *config.ServiceConfig) Service {
 		Agents:     parseAsyncAgents(cfg.AsyncAgents),
 		Endpoints:  parseEndpoints(cfg.Endpoints),
 		Components: parseComponents(cfg.ExtraConfig),
+		AuthProd:   parseAuthProd(cfg),
 	}
 }
 

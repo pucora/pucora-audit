@@ -1,5 +1,5 @@
 {
-  "$schema": "https://pucora.io/schema/pucora.json",
+  "$schema": "https://pucora.in/schema/pucora.json",
   "version": 3,
   "host": ["http://localhost:8080"],
   "extra_config": {
